@@ -1,0 +1,29 @@
+<html>
+<body>
+<center>
+<h3>Image:</h3>
+<img id="lpu" src="C:\Users\Rajat\Downloads\download.png" width="200" height="100">
+
+<br>
+<br>
+
+<h3>Canvas:</h3>
+<canvas id="cnvs" width="500" height="300" style="border:1px solid black;"></canvas>
+
+<br>
+<br>
+
+<p><button onclick="canvas()"> Click Here! </button></p>
+</center>
+
+<script>
+function canvas()
+{
+var c=document.getElementById("cnvs");
+var ctx=c.getContext("2d");
+var img=document.getElementById("lpu");
+ctx.drawImage(img,200,100); 
+}
+</script>
+</body>
+</html>
